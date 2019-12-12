@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{972B90EB-891B-4D4B-ADC9-FFE66AED7B15}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>travels</RootNamespace>
+    <AssemblyName>travels</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="allcust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allcust.Designer.cs">
+      <DependentUpon>allcust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allprog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allprog.Designer.cs">
+      <DependentUpon>allprog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="alltool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alltool.Designer.cs">
+      <DependentUpon>alltool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="change pass Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="change pass Form.Designer.cs">
+      <DependentUpon>change pass Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="check pass manger Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="check pass manger Form.Designer.cs">
+      <DependentUpon>check pass manger Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chosee employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chosee employee.Designer.cs">
+      <DependentUpon>chosee employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteEmployee1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteEmployee1.Designer.cs">
+      <DependentUpon>DeleteEmployee1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dellprog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dellprog.Designer.cs">
+      <DependentUpon>dellprog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delttool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delttool.Designer.cs">
+      <DependentUpon>delttool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editemployee.Designer.cs">
+      <DependentUpon>editemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form2.Designer.cs">
+      <DependentUpon>form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertcustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertcustomer.Designer.cs">
+      <DependentUpon>insertcustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editcustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editcustomer.Designer.cs">
+      <DependentUpon>editcustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletetransporttools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletetransporttools.Designer.cs">
+      <DependentUpon>deletetransporttools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editprogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editprogram.Designer.cs">
+      <DependentUpon>editprogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletcustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletcustomer.Designer.cs">
+      <DependentUpon>deletcustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="insertemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="insertemployee.Designer.cs">
+      <DependentUpon>insertemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inserttransporttools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inserttransporttools.Designer.cs">
+      <DependentUpon>inserttransporttools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edittransporttools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edittransporttools.Designer.cs">
+      <DependentUpon>edittransporttools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteprogram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteprogram.Designer.cs">
+      <DependentUpon>deleteprogram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginForm.Designer.cs">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="starting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="starting.Designer.cs">
+      <DependentUpon>starting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Total Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Total Form.Designer.cs">
+      <DependentUpon>Total Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet63.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet63.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="travelDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>travelDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TRAVELDB.cs" />
+    <EmbeddedResource Include="allcust.resx">
+      <DependentUpon>allcust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allprog.resx">
+      <DependentUpon>allprog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alltool.resx">
+      <DependentUpon>alltool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="change pass Form.resx">
+      <DependentUpon>change pass Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="check pass manger Form.resx">
+      <DependentUpon>check pass manger Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chosee employee.resx">
+      <DependentUpon>chosee employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteEmployee1.resx">
+      <DependentUpon>DeleteEmployee1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dellprog.resx">
+      <DependentUpon>dellprog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delttool.resx">
+      <DependentUpon>delttool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editemployee.resx">
+      <DependentUpon>editemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form2.resx">
+      <DependentUpon>form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertcustomer.resx">
+      <DependentUpon>insertcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editcustomer.resx">
+      <DependentUpon>editcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletetransporttools.resx">
+      <DependentUpon>deletetransporttools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editprogram.resx">
+      <DependentUpon>editprogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletcustomer.resx">
+      <DependentUpon>deletcustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="insertemployee.resx">
+      <DependentUpon>insertemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inserttransporttools.resx">
+      <DependentUpon>inserttransporttools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edittransporttools.resx">
+      <DependentUpon>edittransporttools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteprogram.resx">
+      <DependentUpon>deleteprogram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginForm.resx">
+      <DependentUpon>loginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="starting.resx">
+      <DependentUpon>starting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Total Form.resx">
+      <DependentUpon>Total Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="travelDataSet.xsc">
+      <DependentUpon>travelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet.xss">
+      <DependentUpon>travelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet1.xsc">
+      <DependentUpon>travelDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet1.xss">
+      <DependentUpon>travelDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet10.xsc">
+      <DependentUpon>travelDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet10.xss">
+      <DependentUpon>travelDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet11.xsc">
+      <DependentUpon>travelDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet11.xss">
+      <DependentUpon>travelDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet2.xsc">
+      <DependentUpon>travelDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet2.xss">
+      <DependentUpon>travelDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet3.xsc">
+      <DependentUpon>travelDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet3.xss">
+      <DependentUpon>travelDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet4.xsc">
+      <DependentUpon>travelDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet4.xss">
+      <DependentUpon>travelDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet5.xsc">
+      <DependentUpon>travelDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet5.xss">
+      <DependentUpon>travelDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet63.xsc">
+      <DependentUpon>travelDataSet63.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet63.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet63.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet63.xss">
+      <DependentUpon>travelDataSet63.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet7.xsc">
+      <DependentUpon>travelDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet7.xss">
+      <DependentUpon>travelDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet8.xsc">
+      <DependentUpon>travelDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet8.xss">
+      <DependentUpon>travelDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet9.xsc">
+      <DependentUpon>travelDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="travelDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>travelDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="travelDataSet9.xss">
+      <DependentUpon>travelDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-illustration-5260053-zen-banners.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD Wallpaper %28209%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-photo-paper-texture-old-book-page-backgrounds-96178394.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
